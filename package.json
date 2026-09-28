@@ -1,0 +1,16 @@
+{
+  "name": "patient-case-taking-and-medical-record-system",
+  "version": "1.0.0",
+  "description": "Patient Case-Taking and Medical Record Management System - College Academic Project",
+  "main": "backend/index.js",
+  "scripts": {
+    "server": "node backend/index.js",
+    "client": "npm run dev --prefix frontend",
+    "dev": "concurrently -k \"npm run server\" \"npm run client\"",
+    "start": "node backend/index.js",
+    "build": "npm run build --prefix frontend"
+  },
+  "dependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
